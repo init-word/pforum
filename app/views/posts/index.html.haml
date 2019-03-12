@@ -1,7 +1,14 @@
-#posts
+#warn
+ - if user_signed_in?
+ - else
+  %h5 Para acessar as postagens é necessário estar logado
+#posts 
  - @posts.each do |post|
   .post
-   %h2.title= link_to post.title, post
+   - if user_signed_in?
+    %h2.title= link_to post.title, post
+   - else
+    %h2.title= post.title
    %p.date
     Published at
     = time_ago_in_words(post.created_at)

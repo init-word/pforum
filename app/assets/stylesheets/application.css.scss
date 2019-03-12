@@ -56,11 +56,19 @@ body {
    font-weight: 100;
   }
  }
+ #logado {
+  float: right;
+  padding: .5em 1em;
+  vertical-align: middle;
+  font-size: 1.0rem;
+  color: white;
+ }
  }
 #posts {
  background: white;
  padding: 2em 5%;
  border-radius: .5em;
+ margin-bottom: 10px;
  .post {
   margin: 1em 0;
   padding: 1em 0;
@@ -94,7 +102,8 @@ body {
 #post_content {
  background: white;
  padding: 2em 5%;
- border-radius: .5em;
+ border-radius: .2em;
+ margin-bottom: 30px;
  h1 {
   font-weight: 100;
   font-size: 2em;
@@ -103,7 +112,7 @@ body {
  }
  p {
   color: #B2BAC2;
-  font-size: 0.9em;
+  font-size: 1.1em;
   line-height: 1.5;
   font-size: 100;
  }
@@ -138,7 +147,7 @@ body {
    .comment_author {
     color: #397CAC;
     margin-top: 0.5rem; 
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 700;
    }
   }
@@ -159,3 +168,56 @@ body {
   }
  }
 }
+
+#warn{
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+#post_new{
+  h2 {
+   font-weight: 100;
+   font-size: 2em;
+   color: White;
+   margin-top: 0;
+  }
+  input[type="text"] {
+   width: 100%;
+   min-height: 20px;
+   border: 1px solid #d1d1d1;
+   border-radius: .2em;
+   margin: 1em 0;
+  }
+  textarea {
+   width: 90%;
+   min-height: 200px;
+   border: 1px solid #d1d1d1;
+   border-radius: .2em;
+   margin: 1em 0;
+  }
+  input[type="submit"] {
+   background: #397CAC;
+   border: none;
+   color: white;
+   font-weight: 100;
+   padding: .5em 1em;
+   border-radius: .2em;
+  }
+  .buttons {
+    margin-top: 0.6rem;
+    width: 25%;
+    float: right;
+    font-size: 1.0em;
+    text-align: right;
+     a {
+     background: #397CAC;
+     color: white;
+     border: 1px solid #397CAC;
+     padding: .5em 1em;
+     border-radius: 0.2em;
+     text-decoration: none; 
+     }
+   }
+}
+

@@ -15,9 +15,13 @@
       #buttons
         - if user_signed_in?
           = link_to "Novo Post", new_post_path
+          = link_to "Sair", destroy_user_session_path, method: :delete
         - else
           = link_to "Criar conta", new_user_registration_path
           = link_to "Entrar", new_user_session_path
+      #logado
+        - if user_signed_in?
+          %p #{current_user.email}
 .wrapper    
   %p.notice= notice
   %p.alert= alert
